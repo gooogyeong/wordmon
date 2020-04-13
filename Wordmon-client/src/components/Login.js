@@ -1,16 +1,16 @@
-import React from "react";
-import { Link, Route, withRouter, Redirect } from "react-router-dom";
-import axios from "axios";
-import GoogleLogin from "react-google-login";
-import { connect } from "react-redux";
-import Rainbowfy from "react-rainbowfy";
+import React from 'react';
+import { Link, Route, withRouter, Redirect } from 'react-router-dom';
+import axios from 'axios';
+import GoogleLogin from 'react-google-login';
+import { connect } from 'react-redux';
+import Rainbowfy from 'react-rainbowfy';
 
-import "./Login.css";
-import "../App.css";
-import Signup from "./Signup";
-import { GOOGLE_CLIENT_ID } from "../config/google_client_id";
-import { requestLogin, updateUserInfo } from "../actions/loginActions";
-import { handleLoginSuccess } from "../actions/loginActions";
+import './Login.css';
+import '../App.css';
+import Signup from './Signup';
+import { GOOGLE_CLIENT_ID } from '../config/google_client_id';
+import { requestLogin, updateUserInfo } from '../actions/loginActions';
+import { handleLoginSuccess } from '../actions/loginActions';
 
 axios.defaults.withCredentials = true;
 // `withCredentials` indicates whether or not cross-site Access-Control requests

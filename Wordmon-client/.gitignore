@@ -1,8 +1,7 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
-#config
+# config
 /src/config/google_client_id.js
-/src/config/googleClientId.js
 
 # dependencies
 /node_modules
