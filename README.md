@@ -46,8 +46,8 @@
 `npm install`
 
 3. 실행
-클라이언트: `npm start`
-서버: `node app.js`
+`npm start` (클라이언트)
+`node app.js` (서버)
 
 ## 디렉토리 구조
 ```
