@@ -1,8 +1,7 @@
 # wordmon
-워드몬은 심심함을 달래주고, 어휘력을 높여주며, 은근히 승부욕을 자극하는 끝말잇기 게임 웹 어플리케이션입니다.
 
 ## 서비스 소개 
-서버와의 연동을 위해서는 클라이언트와 서버 파일을 설치해 함께 실행시켜주세요. 
+워드몬은 심심함을 달래주고, 어휘력을 높여주며, 은근히 승부욕을 자극하는 끝말잇기 게임 웹 어플리케이션입니다. 
 
 ## 주요 기능
 1. 구글 소셜 로그인
@@ -37,17 +36,18 @@
 - material-ui (/core, /icons, react-rainbowfy)
 
 ## Usage
+
+서버와의 연동을 위해서는 클라이언트와 서버 파일을 설치해 함께 실행시켜주세요.
+
 1. 코드 복사
-`git clone https://github.com/codestates/Wordmon-server.git`
+`git clone https://github.com/gooogyeong/wordmon.git`
 
-2. dev_local 브랜치로 이동
-`git checkout dev_local`
-
-3. 패키지 설치
+2. 패키지 설치
 `npm install`
 
-4. 실행
-`npm start`
+3. 실행
+클라이언트: `npm start`
+서버: `node app.js`
 
 ## 디렉토리 구조
 ```
