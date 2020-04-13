@@ -2,6 +2,7 @@
 
 #config
 /src/config/google_client_id.js
+/src/config/googleClientId.js
 
 # dependencies
 /node_modules
