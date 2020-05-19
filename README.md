@@ -84,8 +84,8 @@
      └── index                            - 어플리케이션 엔트리 포인트
 ```
 
-## 서버 API
-<br>
+## 서버 API <br>
+
   **/user** <br>
 
 - GET: 유저 정보 <br>
@@ -94,7 +94,7 @@
   ```
   axios.get('http://localhost:4000/user')
   ```
-  **respons**e <br>
+  **response** <br>
   cookie에 userId 토큰으로 로그인된 유저인지 식별 후 <br>
   ```
   res.json({
