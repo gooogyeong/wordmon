@@ -86,7 +86,7 @@
 
 ## 서버 API
 
-  ###/user <br>###
+  ###/user ###<br>
 
 - GET - 유저 정보 <br>
   **request** <br>
@@ -106,16 +106,16 @@
   **request** <br>
   ```
   axios.post('http://localhost:4000/user', {
-  googleToken:,
-  nickname:,
+    googleToken:,
+    nickname:,
   }) 
   ```
   **response** <br>
   ```
   res.json({
-  nickname:, 
-  profileImg:,
-  score 
+    nickname:, 
+    profileImg:,
+    score 
   })
   ```
   
