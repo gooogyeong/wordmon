@@ -86,7 +86,7 @@
 
 ## 서버 API
 
-  /user <br>
+  ###/user <br>###
 
 - GET - 유저 정보 <br>
   **request** <br>
