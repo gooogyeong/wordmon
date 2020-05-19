@@ -86,7 +86,7 @@
 
 ## 서버 API
 
- <br> **/user** 
+ <br> **/user** <br>
 
 - GET: 유저 정보
 
@@ -121,10 +121,10 @@
     score 
   })
   ```
-  <br>
- <br> **/user/siginin**
 
-- POST: 로그인 (토큰을 쿠키에 저장)<br>
+ <br> **/user/siginin**<br>
+
+- POST: 로그인 (토큰을 쿠키에 저장)
   **request** 
   ```
   axios.post('http://localhost:4000/user/siginin')
@@ -150,8 +150,8 @@
 
  <br> **/user/:nickname** <br>
 
-- GET: 닉네임 중복검사<br>
-  **request** <br>
+- GET: 닉네임 중복검사
+  **request** 
   ```
   axios.get('http://localhost:4000/user/:nickname') 
   ```
@@ -161,7 +161,7 @@
   ```
   <br>**/user/nickname** 
 
-- PATCH: 닉네임 수정<br>
+- PATCH: 닉네임 수정
  **request**
   ```
   axios.patch('http://localhost:4000/user/nickname', {nickname:'변경할닉네임'})
@@ -173,19 +173,19 @@
  
  <br> **/user/profile-img** <br>
 
-- PATCH: 프로필 이미지 수정<br>
+- PATCH: 프로필 이미지 수정
   **request** 
   ```
   axios.patch('http://localhost:4000/user/profile-img', {file: 변경할 프로필 이미지})
   ```
  **response** 
   ```
-  res.send(nickname updated: '변경된 프로필 이미지 경로');<br>
+  res.send(nickname updated: '변경된 프로필 이미지 경로');
   ```
   
  <br> **/user/score** <br>
 
-- PATCH: 최고 점수 수정 <br>
+- PATCH: 최고 점수 수정 
 
   **request** 
   ```
@@ -198,7 +198,7 @@
 
  <br> **/word** <br>
 
-- POST: 단어 사전 체크 <br>
+- POST: 단어 사전 체크 
   **request** 
   ```
   axios.patch('http://localhost:4000/word', {word:'검사할 단어'})
