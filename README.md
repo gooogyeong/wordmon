@@ -120,7 +120,7 @@
   })
   ```
 
- <br> **/user/siginin**<br>
+ <br> **/user/siginin** <br>
 
 - POST: 로그인 (토큰을 쿠키에 저장)<br>
   **request** 
@@ -136,7 +136,7 @@
   })
   ```
   
-  <br>**/user/siginout**<br>
+  <br> **/user/siginout** <br>
 
 - POST: 로그아웃<br>
   **request** 
@@ -157,7 +157,7 @@
   ```
   res.send(true/false)
   ```
-  <br>**/user/nickname** 
+  <br> **/user/nickname** <br>
 
 - PATCH: 닉네임 수정<br>
   **request**
