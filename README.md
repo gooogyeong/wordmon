@@ -90,28 +90,34 @@
 
 - GET - 유저 정보 <br>
   **request** <br>
+  ```
   axios.get('http://localhost:4000/user') <br>
+  ```
   **respons**e <br>
   cookie에 userId 토큰으로 로그인된 유저인지 식별 후 <br>
+  ```
   res.json({ <br>
   nickname:, <br>
   profileImg:, <br>
   score <br>
   }) <br>
-
+```
 - POST - 유저 등록 <br>
   **request** <br>
+  ```
   axios.post('http://localhost:4000/user', {
   googleToken:,
   nickname:,
   }) <br>
+  ```
   **response** <br>
+  ```
   res.json({ <br>
   nickname:, <br>
   profileImg:, <br>
   score <br>
   }) <br>
-
+```
 /user/siginin<br>
 
 - POST - 로그인 (토큰을 쿠키에 저장)<br>
@@ -141,7 +147,9 @@ axios.post('http://localhost:4000/user/siginin') <br>
 
 - GET - 닉네임 중복검사<br>
   **request** <br>
+  ```
   axios.get('http://localhost:4000/user/:nickname') <br>
+  ```
   **response** <br>
   res.send(true/false)
 
@@ -149,7 +157,9 @@ axios.post('http://localhost:4000/user/siginin') <br>
 
 - PATCH - 닉네임 수정<br>
   **request** <br>
+  ```
   axios.patch('http://localhost:4000/user/nickname', {nickname:'변경할닉네임'})<br>
+  ```
   **response** <br>
   res.send(nickname updated: '변경된 닉네임');<br>
 
@@ -157,7 +167,9 @@ axios.post('http://localhost:4000/user/siginin') <br>
 
 - PATCH - 프로필 이미지 수정<br>
   **request** <br>
+  ```
   axios.patch('http://localhost:4000/user/profile-img', {file: 변경할 프로필 이미지})<br>
+  ```
   **response** <br>
   res.send(nickname updated: '변경된 프로필 이미지 경로');<br>
 
@@ -165,19 +177,25 @@ axios.post('http://localhost:4000/user/siginin') <br>
 
 - PATCH - 최고 점수 수정 <br>
   **request** <br>
+  ```
   axios.patch('http://localhost:4000/user/score', {score:'변경할 최고점수'})<br>
+  ```
   **response** <br>
+  ```
   res.send(nickname updated: '변경된 최고점수');<br>
-
+```
 ---
 
 /word <br>
 
 - POST - 단어 사전 체크 <br>
   **request** <br>
+  ```
   axios.patch('http://localhost:4000/word', {word:'검사할 단어'})<br>
+  ```
   **response** <br>
+  ```
   res.send(true);<br>
-  
+  ```
 --- socket통신
 /room
