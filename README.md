@@ -206,7 +206,7 @@
   ```
   res.send(true);
   ```
-<br>
-  **/room**
+
+ <br> **/room**
   
 - socket통신
