@@ -49,7 +49,7 @@
 `npm start` (클라이언트)
 `node app.js` (서버)
 
-## 디렉토리 구조
+## 클라이언트 디렉토리 구조
 ```
 ├── src/
      └── components/
@@ -84,9 +84,9 @@
      └── index                            - 어플리케이션 엔트리 포인트
 ```
 
-## API 문서
+## 서버 API
 
-/user <br>
+  /user <br>
 
 - GET - 유저 정보 <br>
   **request** <br>
@@ -118,7 +118,8 @@
   score 
   })
   ```
-/user/siginin<br>
+  
+  /user/siginin<br>
 
 - POST - 로그인 (토큰을 쿠키에 저장)<br>
   **request** <br>
@@ -133,7 +134,8 @@
     score 
   })
   ```
-/user/siginout<br>
+  
+  /user/siginout<br>
 
 - POST - 로그아웃 <br>
   **request** <br>
@@ -143,7 +145,7 @@
   **response** <br>
   쿠키에서 로그인 토큰 삭제
 
-/user/:nickname <br>
+  /user/:nickname <br>
 
 - GET - 닉네임 중복검사<br>
   **request** <br>
@@ -153,7 +155,7 @@
   **response** <br>
   res.send(true/false)
 
-/user/nickname <br>
+  /user/nickname <br>
 
 - PATCH - 닉네임 수정<br>
   **request** <br>
@@ -164,7 +166,8 @@
   ```
   res.send(nickname updated: '변경된 닉네임');
   ```
-/user/profile-img <br>
+  
+  /user/profile-img <br>
 
 - PATCH - 프로필 이미지 수정<br>
   **request** <br>
@@ -172,9 +175,11 @@
   axios.patch('http://localhost:4000/user/profile-img', {file: 변경할 프로필 이미지})
   ```
   **response** <br>
+  ```
   res.send(nickname updated: '변경된 프로필 이미지 경로');<br>
-
-/user/score <br>
+  ```
+  
+  /user/score <br>
 
 - PATCH - 최고 점수 수정 <br>
   **request** <br>
@@ -185,9 +190,8 @@
   ```
   res.send(nickname updated: '변경된 최고점수');
   ```
----
 
-/word <br>
+  /word <br>
 
 - POST - 단어 사전 체크 <br>
   **request** <br>
@@ -198,5 +202,7 @@
   ```
   res.send(true);
   ```
---- socket통신
-/room
+
+  /room
+  
+- socket통신
