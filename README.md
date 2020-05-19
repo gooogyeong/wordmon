@@ -89,12 +89,11 @@
  <br> **/user** <br>
 
 - GET: 유저 정보<br>
-
   **request** 
   ```
   axios.get('http://localhost:4000/user')
   ```
- **response** 
+  **response** 
   cookie에 userId 토큰으로 로그인된 유저인지 식별 후 
   ```
   res.json({
@@ -105,7 +104,6 @@
   ```
   <br>
 - POST: 유저 등록 <br>
-
   **request** 
   ```
   axios.post('http://localhost:4000/user', {
@@ -129,7 +127,7 @@
   ```
   axios.post('http://localhost:4000/user/siginin')
   ```
- **response** 
+  **response** 
   ```
   res.json({ 
     nickname:, 
@@ -145,7 +143,7 @@
   ```
   axios.post('http://localhost:4000/user/siginout')
   ```
-**response**
+  **response**
   쿠키에서 로그인 토큰 삭제
 
  <br> **/user/:nickname** <br>
@@ -162,23 +160,23 @@
   <br>**/user/nickname** 
 
 - PATCH: 닉네임 수정<br>
- **request**
+  **request**
   ```
   axios.patch('http://localhost:4000/user/nickname', {nickname:'변경할닉네임'})
   ```
- **response** 
+  **response** 
   ```
   res.send(nickname updated: '변경된 닉네임');
   ```
  
- <br> **/user/profile-img** <br>
+ <br>**/user/profile-img**<br>
 
 - PATCH: 프로필 이미지 수정<br>
   **request** 
   ```
   axios.patch('http://localhost:4000/user/profile-img', {file: 변경할 프로필 이미지})
   ```
- **response** 
+  **response** 
   ```
   res.send(nickname updated: '변경된 프로필 이미지 경로');
   ```
@@ -186,7 +184,6 @@
  <br> **/user/score** <br>
 
 - PATCH: 최고 점수 수정 <br>
-
   **request** 
   ```
   axios.patch('http://localhost:4000/user/score', {score:'변경할 최고점수'})
@@ -208,6 +205,6 @@
   res.send(true);
   ```
 
- <br> **/room**<br>
+ <br>**/room**<br>
   
 - socket통신
