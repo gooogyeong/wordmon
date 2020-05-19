@@ -116,19 +116,24 @@
 
 - POST - 로그인 (토큰을 쿠키에 저장)<br>
   **request** <br>
-  axios.post('http://localhost:4000/user/siginin') <br>
+  ```
+axios.post('http://localhost:4000/user/siginin') <br>
+```
   **response** <br>
+  ```
   res.json({ <br>
   nickname:, <br>
   profileImg:, <br>
   score <br>
   }) <br>
-
+```
 /user/siginout<br>
 
 - POST - 로그아웃 <br>
   **request** <br>
+  ```
   axios.post('http://localhost:4000/user/siginout') <br>
+  ```
   **response** <br>
   쿠키에서 로그인 토큰 삭제
 
