@@ -85,7 +85,7 @@
 ```
 
 ## 서버 API
-
+<br>
   **/user** <br>
 
 - GET: 유저 정보 <br>
@@ -103,7 +103,7 @@
     score
   })
   ```
-  
+  <br>
 - POST: 유저 등록 <br>
 
   **request** <br>
@@ -121,7 +121,7 @@
     score 
   })
   ```
-  
+  <br>
   **/user/siginin**<br>
 
 - POST: 로그인 (토큰을 쿠키에 저장)<br>
@@ -147,8 +147,8 @@
   ```
   **response** <br>
   쿠키에서 로그인 토큰 삭제
-
-  /user/:nickname <br>
+<br>
+  **/user/:nickname** <br>
 
 - GET: 닉네임 중복검사<br>
   **request** <br>
@@ -169,8 +169,8 @@
   ```
   res.send(nickname updated: '변경된 닉네임');
   ```
-  
-  /user/profile-img <br>
+  <br>
+  **/user/profile-img** <br>
 
 - PATCH: 프로필 이미지 수정<br>
   **request** <br>
@@ -184,7 +184,7 @@
   
   **/user/score** <br>
 
-- PATC: 최고 점수 수정 <br>
+- PATCH: 최고 점수 수정 <br>
 
   **request** <br>
   ```
@@ -206,7 +206,7 @@
   ```
   res.send(true);
   ```
-
+<br>
   **/room**
   
 - socket통신
