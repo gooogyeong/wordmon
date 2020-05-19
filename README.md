@@ -94,7 +94,7 @@
   ```
   axios.get('http://localhost:4000/user')
   ```
-  **response** <br>
+ <br> **response** <br>
   cookie에 userId 토큰으로 로그인된 유저인지 식별 후 <br>
   ```
   res.json({
@@ -113,7 +113,7 @@
     nickname:,
   }) 
   ```
-  **response** <br>
+  <br>**response** <br>
   ```
   res.json({
     nickname:, 
@@ -129,7 +129,7 @@
   ```
   axios.post('http://localhost:4000/user/siginin')
   ```
-  **response** <br>
+ <br> **response** <br>
   ```
   res.json({ 
     nickname:, 
@@ -138,51 +138,51 @@
   })
   ```
   
-  <br>**/user/siginout**
+  <br>**/user/siginout**<br>
 
 - POST: 로그아웃 <br>
   **request** <br>
   ```
   axios.post('http://localhost:4000/user/siginout')
   ```
-  **response** <br>
+ <br> **response** <br>
   쿠키에서 로그인 토큰 삭제
 
- <br> **/user/:nickname** 
+ <br> **/user/:nickname** <br>
 
 - GET: 닉네임 중복검사<br>
   **request** <br>
   ```
   axios.get('http://localhost:4000/user/:nickname') 
   ```
-  **response** <br>
+<br>  **response** <br>
   res.send(true/false)
 
   <br>**/user/nickname** 
 
 - PATCH: 닉네임 수정<br>
-  **request** <br>
+ **request** <br>
   ```
   axios.patch('http://localhost:4000/user/nickname', {nickname:'변경할닉네임'})
   ```
-  **response** <br>
+ <br> **response** <br>
   ```
   res.send(nickname updated: '변경된 닉네임');
   ```
  
- <br> **/user/profile-img** 
+ <br> **/user/profile-img** <br>
 
 - PATCH: 프로필 이미지 수정<br>
   **request** <br>
   ```
   axios.patch('http://localhost:4000/user/profile-img', {file: 변경할 프로필 이미지})
   ```
-  **response** <br>
+ <br> **response** <br>
   ```
   res.send(nickname updated: '변경된 프로필 이미지 경로');<br>
   ```
   
- <br> **/user/score** 
+ <br> **/user/score** <br>
 
 - PATCH: 최고 점수 수정 <br>
 
@@ -190,23 +190,23 @@
   ```
   axios.patch('http://localhost:4000/user/score', {score:'변경할 최고점수'})
   ```
-  **response** <br>
+<br>  **response** <br>
   ```
   res.send(nickname updated: '변경된 최고점수');
   ```
 
- <br> **/word** 
+ <br> **/word** <br>
 
 - POST: 단어 사전 체크 <br>
   **request** <br>
   ```
   axios.patch('http://localhost:4000/word', {word:'검사할 단어'})
   ```
-  **response** <br>
+<br>  **response** <br>
   ```
   res.send(true);
   ```
 
- <br> **/room**
+ <br> **/room**<br>
   
 - socket통신
