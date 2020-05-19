@@ -88,14 +88,14 @@
 
  <br> **/user** 
 
-- GET: 유저 정보 <br>
+- GET: 유저 정보
 
-  **request** <br>
+  **request** 
   ```
   axios.get('http://localhost:4000/user')
   ```
- <br> **response** <br>
-  cookie에 userId 토큰으로 로그인된 유저인지 식별 후 <br>
+ **response** 
+  cookie에 userId 토큰으로 로그인된 유저인지 식별 후 
   ```
   res.json({
     nickname:,
@@ -106,14 +106,14 @@
   <br>
 - POST: 유저 등록 <br>
 
-  **request** <br>
+  **request** 
   ```
   axios.post('http://localhost:4000/user', {
     googleToken:,
     nickname:,
   }) 
   ```
-  <br>**response** <br>
+  **response** 
   ```
   res.json({
     nickname:, 
@@ -125,11 +125,11 @@
  <br> **/user/siginin**
 
 - POST: 로그인 (토큰을 쿠키에 저장)<br>
-  **request** <br>
+  **request** 
   ```
   axios.post('http://localhost:4000/user/siginin')
   ```
- <br> **response** <br>
+ **response** 
   ```
   res.json({ 
     nickname:, 
@@ -140,12 +140,12 @@
   
   <br>**/user/siginout**<br>
 
-- POST: 로그아웃 <br>
-  **request** <br>
+- POST: 로그아웃
+  **request** 
   ```
   axios.post('http://localhost:4000/user/siginout')
   ```
- <br> **response** <br>
+**response**
   쿠키에서 로그인 토큰 삭제
 
  <br> **/user/:nickname** <br>
@@ -155,17 +155,18 @@
   ```
   axios.get('http://localhost:4000/user/:nickname') 
   ```
-<br>  **response** <br>
+  **response**
+  ```
   res.send(true/false)
-
+  ```
   <br>**/user/nickname** 
 
 - PATCH: 닉네임 수정<br>
- **request** <br>
+ **request**
   ```
   axios.patch('http://localhost:4000/user/nickname', {nickname:'변경할닉네임'})
   ```
- <br> **response** <br>
+ **response** 
   ```
   res.send(nickname updated: '변경된 닉네임');
   ```
@@ -173,11 +174,11 @@
  <br> **/user/profile-img** <br>
 
 - PATCH: 프로필 이미지 수정<br>
-  **request** <br>
+  **request** 
   ```
   axios.patch('http://localhost:4000/user/profile-img', {file: 변경할 프로필 이미지})
   ```
- <br> **response** <br>
+ **response** 
   ```
   res.send(nickname updated: '변경된 프로필 이미지 경로');<br>
   ```
@@ -186,11 +187,11 @@
 
 - PATCH: 최고 점수 수정 <br>
 
-  **request** <br>
+  **request** 
   ```
   axios.patch('http://localhost:4000/user/score', {score:'변경할 최고점수'})
   ```
-<br>  **response** <br>
+  **response** 
   ```
   res.send(nickname updated: '변경된 최고점수');
   ```
@@ -198,11 +199,11 @@
  <br> **/word** <br>
 
 - POST: 단어 사전 체크 <br>
-  **request** <br>
+  **request** 
   ```
   axios.patch('http://localhost:4000/word', {word:'검사할 단어'})
   ```
-<br>  **response** <br>
+  **response** 
   ```
   res.send(true);
   ```
